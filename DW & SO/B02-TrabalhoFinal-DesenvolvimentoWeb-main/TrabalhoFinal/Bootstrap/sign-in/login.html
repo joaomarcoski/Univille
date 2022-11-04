@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Login Usuário</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .logo2{
+        margin-bottom: 15px;
+      }
+
+      .formulario{
+        margin-bottom: 70px;  
+      }
+
+      #Entrar{
+        color: white;
+        margin-top: 5px;
+        background-color: brown;
+      }
+
+      .Voltar{
+        left: 1000px;
+      }
+
+      #usuario{
+        border-radius: 5px;
+        margin-bottom: 3px;
+      }
+      #senha{
+        border-radius: 5px;
+      }
+    </style>
+
+  </head>
+
+  <body  class="bg-dark">  
+    <main class="form-signin w-100 m-auto text-center">
+      <div class="formulario">
+        <h1 class="h3 mb-3 fw-normal text-white">Para continuar digite seu Usuário e Senha</h1>
+        <div class="form-floating" id="usuario">
+          <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuário">
+          <label for="floatingInput">Usuário</label>
+        </div>
+        <div class="form-floating" id="senha">
+          <input type="password" name="senha" class="form-control" id="senha" placeholder="Senha">
+          <label for="floatingPassword">Senha</label>
+        </div>
+        <button class="w-100 btn btn-lg btn" id="Entrar" onclick="login()">Entrar</button>
+        <a href="../header/Home.html"><button class="w-100 btn bg-secondary" id="Voltar">Voltar</button></a>
+      </div>
+    </main>
+  </body>
+
+
+  <script>
+    function login(){
+        alert('Usuário Logado')
+    }
+  </script>
+</html>

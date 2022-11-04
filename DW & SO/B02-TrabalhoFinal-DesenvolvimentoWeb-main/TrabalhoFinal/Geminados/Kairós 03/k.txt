@@ -1,0 +1,32 @@
+        <!--
+          <div class="quadro">
+            <div class="informacoes1">
+              <h5>Geminado de 98m² com:</h5>
+                <ul>
+                  <li>2 Dormitórios</li>
+                  <li>Sala</li>
+                  <li>Lavabo</li>
+                  <li>Banheiro</li>
+                  <li>Suíte</li>
+                  <li>Lavande</li>
+                  <li>Gragem para 2 Veículos</li>
+                  <li>2 Dormitórios</li>
+                </ul>
+            </div>
+            <div class="informacoes2">
+              <h5>Acabamentos:</h5>
+              <ul>
+                <li>Massa Corrida</li>
+                <li>Todo em Porcelanato</li>
+                <li>Vidros Blindex</li>
+              </ul>
+            </div>
+            <div class="informacoes3">
+              <h5>Localização:</h5>
+              <ul>
+                <li>Bairo Floresta</li>
+                <li>Próximo ao Mercado Hipermais</li>
+                <li>Acesso a BR</li>
+              </ul>
+            </div
+        -->

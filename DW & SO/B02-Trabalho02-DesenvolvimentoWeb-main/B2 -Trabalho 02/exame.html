@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Nota do Exame</title>
+</head>
+<body>
+    <div>
+        <h1>Sistema de Aprovações de Alunos</h1>
+        <div>
+            <h3 class="SubTitulo">Media Semestral</h3>
+            <input id="inputSemestre" type="text">
+        </div>
+        <div>
+            <h3 class="SubTitulo">Nota do Exame</h3>
+            <input id="inputExame" type="text">
+        </div>
+        <div>
+            <button class="botao" type="button" onclick="Botao1();">Enter</button>
+        </div>
+    </div>
+
+    <script>
+        function Botao1(){
+            var NotaExame = document.getElementById("inputExame").value;
+            var Media = document.getElementById("inputSemestre").value;
+            var Exame = Number(NotaExame);
+            var Semestre = Number(Media);
+
+            if(((Semestre + Exame) / 2) > 5){
+                var resp1 = confirm("Você foi aprovado! Deseja voltar para página inicial?");
+                if (resp1 == true){
+                    window.location.href = "file:///C:/Users/1144004668/Documents/B2%20-Trabalho%2002/index.html";
+                }
+            }
+            else{
+                var resp2 = confirm("Você foi reprovado! Deseja voltar para página inicial?");
+                if (resp2 == true){
+                    window.location.href = "file:///C:/Users/1144004668/Documents/B2%20-Trabalho%2002/index.html";
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .SubTitulo{
+            margin-bottom: 5px;
+        }
+        .botao{
+            margin-top: 10px;
+        }
+    </style>
+
+</body>
+</html>

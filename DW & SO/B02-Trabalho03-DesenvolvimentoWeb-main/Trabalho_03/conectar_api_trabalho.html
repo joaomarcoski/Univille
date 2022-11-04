@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script src="script_api_trabalho.js"></script> 
+	</head>
+	<body>
+        <h3>Consultar informações do veículo na Tabela FIPE</h3>
+        <div>
+            <input placeholder="Digite o codigo FIPE" id="FIPE" size="13">
+            <button type="button" onclick="chamar_api();">Consultar</button>
+        </div>
+        <div>
+           <b>Valor:</b><input type="text" id="valor">
+        </div>
+        <div>
+           <b>Marca:</b><input type="text" id="marca">
+        </div>
+        <div>
+           <b>Modelo:</b><input type="text" id="modelo" size="40">
+        </div>
+        <div>
+            <b>Ano Modelo:</b><input type="text" id="anoModelo">
+        </div>
+        <div>
+           <b>Combustivel:</b><input type="text" id="combustivel">
+        </div>
+        <div>
+           <b>Mes Referencia:</b><input type="text" id="mesReferencia">
+        </div>
+        <div>
+           <b>Tipo Veiculo:</b><input type="text" id="tipoVeiculo">
+        </div>
+        <div>
+           <b>Sigla Combustivel:</b><input type="text" id="siglaCombustivel">
+        </div>
+	</body>
+    <style>
+        input{
+            border: 0
+        }
+        div{
+            padding-top: 3px;
+        }
+    </style>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Notas do Semestre</title>
+</head>
+<body>
+    <div>
+        <h1>Sistema de Aprovações de Alunos</h1>
+        <div>
+            <h3 class="SubTitulo">Nota Primeiro Bimestre</h3>
+            <input id="input1" type="text">
+        </div>
+        <div>
+            <h3 class="SubTitulo">Nota Segundo Bimestre</h3>
+            <input id="input2" type="text">
+        </div>
+        <div>
+            <h3 class="SubTitulo">Número de Aulas no Semestre</h3>
+            <input id="input3" type="text">
+        </div>
+        <div>
+            <h3 class="SubTitulo">Número de Faltas no Semestre</h3>
+            <input id="input4" type="text">
+        </div>
+        <div>
+            <button button class="botao" type="button" onclick="Botao();">Enter</button>
+        </div>
+    </div>
+
+    <script>
+        function Botao(){
+            var Nota1 = document.getElementById("input1").value;
+            var Nota2 = document.getElementById("input2").value;
+            var Aulas = document.getElementById("input3").value;
+            var Faltas = document.getElementById("input4").value;
+
+            var Bimestre1 = Number(Nota1);
+            var Bimestre2 = Number(Nota2);
+            var NumeroAulas = Number(Aulas);
+            var NumeroFaltas = Number(Faltas);
+
+            var media = (Bimestre1 + Bimestre2) / 2;
+            var frequencia = ((NumeroAulas - NumeroFaltas) * 100) / NumeroAulas;
+
+            if (media >= 7 & frequencia >= 75){
+                alert("Você foi aprovado! Sua média foi: "+ media)
+                location.reload();
+            }
+            else if (frequencia < 75){
+                alert("Você foi reprovado por Faltas! Sua Frequência foi de: "+ frequencia +"%")
+                location.reload();
+            }
+            else if(media < 7 & frequencia >= 75){
+                var resp = confirm("Você ficou de exame! Sua média foi: " + media + " Deseja informar sua nota de Exame?");
+                if (resp == true){
+                    window.location.href = "file:///C:/Users/1144004668/Documents/B2%20-Trabalho%2002/exame.html";
+                }
+                else{
+                    location.reload();
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .SubTitulo{
+            margin-bottom: 5px;
+        }
+        .botao{
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>

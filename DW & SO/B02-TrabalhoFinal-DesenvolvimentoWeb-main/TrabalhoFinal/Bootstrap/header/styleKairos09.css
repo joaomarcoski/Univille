@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+}
+
+.quadro{
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+.parte02{
+    background-color: white;
+    width: 100%;
+    height: 700px;
+}
+.containerContatos{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 500px;
+}
+.titulo{
+    position: absolute;
+    padding: 10px;
+    margin-top: -50px;
+    margin-left: -23px;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+.slider{
+    position: absolute;
+    background-color: gray;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-left: 800px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 5s;
+}
+.slide img{
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 950px;
+    height: 330px;
+}
+.slide2{
+    width: 20%;
+    transition: 5s;
+}
+.slide2 img{
+    margin-left: 35px;
+    margin-top: 50px;
+    width: 950px;
+    height: 330px;
+}
+.slide3{
+    width: 20%;
+    transition: 5s;
+}
+.slide3 img{
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 950px;
+    height: 330px;
+}
+.slide4{
+    width: 20%;
+    transition: 5s;
+}
+.slide4 img{
+    margin-left: 25px;
+    margin-top: 50px;
+    width: 950px;
+    height: 330px;
+}
+.slide5{
+    width: 20%;
+    transition: 5s;
+}
+.slide5 img{
+    margin-left: 45px;
+    margin-top: 50px;
+    width: 950px;
+    height: 330px;
+}
+.slide6{
+    width: 20%;
+    transition: 5s;
+}
+.slide6 img{
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 950px;
+    height: 330px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-left: 100px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background:white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+.navigation-auto{
+    margin-left: 100px;
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 400px;
+}
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 3s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: white;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: white;
+}
+
+.slidr{
+    background-color: white;
+    width: 1903px;
+    height: 857px;
+    overflow: hidden;
+}
+.slids{
+    width: 500%;
+    height: 5000px;
+    display: flex;
+}
+.slids input{
+    display: none;
+}
+.slid{
+    width: 20%;
+    transition: 5s;
+}
+.slid img{
+    margin-left: 460px;
+    width: 1000px;
+    height: 857;
+}
+
+
+.btn{
+    position: absolute;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.logo {
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    width: 65px;
+    height: 35px;
+  }
+
+  .logo2 {
+    width: 65px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+
+  .Entrar {
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 2px;
+  }
+
+  .Cadastrar {
+    border-width: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .banner{
+    width: 1903px;
+    height: 865px;
+  }
+  .titulo{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    top: 40%;
+    left: 45%;
+  }
+  .quadro{
+    position: absolute;
+    top: 1050px;
+    left: 200px;
+  }
+  .planta{
+    position: absolute;
+    margin-top: 60px;
+  }
+  .informacoes{
+    margin-top: 140px;
+  }
+  .campos{
+    width: 500px;
+    margin-top: -20px;
+    margin-left: 855px;
+  }
+  input{
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+  }
+  #primeiroNome{
+    margin-bottom: 10px;
+  }
+  #ultimoNome{
+    margin-bottom: 10px;
+  }
+  #email{
+    margin-bottom: 10px;
+  }
+  #mensagem{
+    margin-bottom: 20px;
+  }
+  #enviar{
+    width: 192px;
+  }
+
+
+

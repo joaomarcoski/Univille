@@ -1,0 +1,100 @@
+    .Blog{
+        color: black;
+        font-family: Lato;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .Contato{
+        color: black;
+        font-family: Lato;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .Instagram{
+        color: black;
+        font-family: Lato;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .Home{
+        color: black;
+        font-family: Lato;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .capa{
+        position: absolute; 
+        left: 300px; 
+        top: 70px;
+    }
+    .Titulo{
+        color: black;
+        font-family: Lato;
+        font-size: 58px;
+        line-height: 75px;
+        text-align: left;
+    }
+    .SubPosts{
+        font-family: Lato;
+        font-size: 38px;
+        line-height: 49px;
+        text-align: left;
+    }
+    .Descricao{
+        font-family: Lato;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+    }
+    #retrato{
+        border: 2px solid black;
+    }
+
+    nav{
+        position: absolute; 
+        left: 295px; 
+        top: 40px;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul li{
+        display: inline;
+        padding: 10px;
+    }
+    article{
+        color: black;
+        font-family: Lato;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+    }
+    /* link que ainda não foi visitado */
+    a:link {
+        color: black;
+    }
+    /* link que foi visitado */
+    a:visited {
+        color: black;
+    }
+    /* mouse over */
+    a:hover {
+        color: black;
+    }
+    /* link selecionado */
+    a:active {
+        color: black;
+    }
+    a{
+        text-decoration: none
+    }
+
+    body{
+        background-color: #F8F8FF
+    }
+  
